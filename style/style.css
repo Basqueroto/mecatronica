@@ -1,0 +1,253 @@
+:root {
+    --cor-principal: #00296B;
+    --cor-branca: white;
+    --cor-alt:#FDC500;
+    --cor-black: black; 
+    --cor-fundo: #3A0CA3;
+    --cor-divs: #3A506B;
+    --cor-laranja:#F36A3E;
+    --cor-laranja-claro: #FFB30B;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    /* font-family: 'Quicksand', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    transition: 0.5s;
+}
+
+header {
+    /* background-color: transparent; */
+    /* filter: blur(5px); */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    /* background: rgba(58, 12, 163, 0.54); */
+    background: rgba(243, 106, 62, 0.95);
+    z-index: 2;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+nav a {
+    color: var(--cor-branca);
+    font-size: 20px;
+}
+
+nav a:hover {
+    font-size: 22px;
+}   
+
+.f  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner {
+    margin-top: 60px;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-image: url(../img/ban.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner-txt {
+    text-align: center;
+    color: var(--cor-branca);
+    background:rgba(243, 106, 62, 0.95);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+/* ---------------------------------o que é --------------------------- */
+
+#carrossel {
+    width: 100%;
+}
+
+#profissao{
+    width: 100%;
+}
+
+#prof-eu {
+    margin-top: 60px;
+    text-align: center;
+}
+
+#prof-eu h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#prof-eu p {
+    font-size: 20px;
+    width: 100%;
+}
+
+#prof-txt {
+    display: flex;
+    justify-content: center;
+}
+
+.slide-img img{
+    width: 100%;
+}
+
+.slide-txt h4 {
+    margin-top: 40px;
+    text-align: right;
+    margin-right: 20px;
+    color: var(--cor-branca);
+    font-size: 30px;
+}
+
+.slide-txt p {
+    margin-top: 25px;
+    text-align: right;
+    margin-right: 20px;
+    color: var(--cor-branca);
+    font-size: 20px;
+}
+
+.content {
+    margin-top: 35px;
+    background-color: var(--cor-laranja-claro);
+    height: 500px;
+    width: 1440px;
+    overflow: hidden;
+  }
+  
+  .img {
+    height: 100%;
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  
+  
+  .navigation {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bar {
+  
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--cor-laranja-claro);
+    margin: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: .5s ease;
+  
+  }
+  
+  .bar:hover {
+    background-color: var(--cor-laranja-claro);
+  }
+  
+  input {
+  display: none;
+  }
+  
+  .slides {
+    display: flex;
+    width: 443%;
+    height: 100%;
+    overflow: hidden;
+
+  }
+  
+  .slide {
+    width: 20%;
+    transition: .6s;
+  }
+  
+  
+  #slide21:checked ~ .s1 {
+    margin-left: 0;
+  } 
+  
+  #slide22:checked ~ .s1 {
+    margin-left: -20%;
+  } 
+
+  #slide23:checked ~ .s1 {
+    margin-left: -40%;
+  } 
+
+  #como {
+    width: 100%;
+    background-color: var(--cor-laranja);
+  }
+
+  #como-title {
+    text-align: center;
+  }
+
+  #como-title h3{
+    padding-top: 30px;
+    font-size: 30px;
+    color: var(--cor-branca);
+  }    
+
+  #como-fazer {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .fazer {
+    width: 200px;
+    text-align: left;
+    color: var(--cor-branca);
+  }
+
+  .fazer h4 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  #tech-title {
+    padding-top: 60px;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+
+  #tech-title h3{
+    font-size: 30px;
+  }
+
+  .mot-fil {
+    display: flex;
+    justify-content: center;
+  }
+
+  .fil-img {
+    border: 1px solid var(--cor-laranja-claro);
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .fil-img img {
+    width: 400px;
+  }
+
+
